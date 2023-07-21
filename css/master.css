@@ -1,0 +1,116 @@
+/*=== Aplicando CSS Global===*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+body{
+	background-color:#EFF5F5;
+}
+p{
+	background-color:#1F8A70;
+	padding:10px;
+}
+
+
+/*=== Aplicando CSS al encabezado===*/
+#logo{
+    width: 30%;
+    padding: 10px;
+}
+#menu{
+    text-align: center;
+}
+
+#imagenFondo{
+	padding:10px;
+	height:20%;
+}
+
+
+
+
+
+
+/*=== Aplicando comportamiento resposive o adaptativo===*/
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    /*=== Aplicando CSS al encabezado===*/
+    #encabezado{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr;
+		background-color:#1F8A70;
+    }
+    #opciones{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+		font-family: arial;
+		padding:5px;
+    }
+	#opciones li:hover{
+		background-color:#EFF5F5;
+	}
+	#opciones li a{
+		text-decoration: none;
+	}
+
+    /*=== Aplicando CSS a la seccion Quienes somos===*/
+    #quienesSomos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		gap:10px;
+		padding:30px;
+		border-top: 5px solid #000;
+    }
+	/*=== Aplicando CSS a la seccion Por que elegirnos===*/
+    #porQueElegirnos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		gap:10px;
+		padding:30px;
+		border-top: 5px solid #000;
+    }
+	/*=== Aplicando CSS a la seccion Noticias===*/
+	#noticias{
+		display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+		padding:30px;
+		border-top: 5px solid #000;
+	}
+	/*=== Aplicando CSS a la seccion Pie de pagina===*/
+	#piePagina{
+		background:#FC7300;
+		display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+		justify-items:center;
+		padding:10px;
+	}
+
+
+}
+/**/
+@media (min-width: 320px) { 
+	#logo{
+		width: 30%;
+		padding: 10px;
+		align:center;
+}
+
+
+
+
